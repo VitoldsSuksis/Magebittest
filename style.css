@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family        : 'PT Sans', sans-serif;
+    height             : 100vh;
+
+    background-image   : url(images/Background.png);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    overflow-y         : hidden;
+
+}
+
+.login-register-container {
+    position        : relative;
+    top             : 50%;
+    transform       : translateY(-50%);
+    width           : 760px;
+    margin          :  auto;
+    height          : 400px;
+    background-color: rgba(25, 32, 50, 0.9);
+}
+
+.login-panel {
+    color      : #fff;
+    width      : 30%;
+    padding    : 0 50px;
+    top        : 20%;
+    left       : 0;
+    position   : absolute;
+    text-align : left;
+    line-height: 25px;
+}
+
+.register-panel {
+    color     : #fff;
+    width     : 30%;
+    padding   : 0 50px;
+    top       : 20%;
+    right     : 0;
+    position  : absolute;
+    text-align: left;
+}
+
+p {
+    font-size  : 14px;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color          : dodgerblue;
+}
+
+h3 {
+    font-weight: normal;
+    color      : rgb(255, 255, 255, .7);
+}
+
+hr {
+    background-color: dodgerblue;
+    width           : 30px;
+    height          : 2px;
+    margin          : 20px auto 20px 0;
+    border          : dodgerblue;
+
+}
+
+.login-register-form-container {
+    margin-top      : 15px;
+    background-color: rgba(255, 255, 255, 1);
+    height          : 470px;
+    position        : absolute;
+    top             : -50px;
+    width           : 400px;
+    right           : 30px;
+    left            : calc(50% - 50px);
+    transition      : .6s ease-in-out;
+    z-index         : 0;
+}
+
+.dark-btn {
+    background-color: transparent;
+    border          : 2px solid dodgerblue;
+    outline: transparent;
+    border-radius   : 40px;
+    color           : white;
+    padding         : 14px 35px;
+    text-align      : center;
+    text-decoration : none;
+    display         : inline-block;
+    font-size       : 12px;
+    font-weight     : 750;
+    margin          : 4px 2px;
+    cursor          : pointer;
+    text-transform  : uppercase;
+    letter-spacing  : 1px;
+}
+
+.dark-btn:hover {
+    color: #fff;
+    background-color: rgb(73, 164, 255);
+}
+
+.form-btn {
+    background-color: rgba(231, 153, 7, 0.842);
+    border-radius   : 40px;
+    outline: transparent;
+    color           : white;
+    padding         : 14px 35px;
+    text-align      : center;
+    text-decoration : none;
+    display         : inline-block;
+    font-size       : 12px;
+    font-weight     : 750;
+    margin          : 35px 2px;
+    cursor          : pointer;
+    border          : none;
+    letter-spacing  : 1px;
+    text-transform  : uppercase;
+}
+
+.form-btn:hover {
+    color: #fff;
+    background-color: rgba(248, 180, 53, 0.842);
+}
+
+.login-box {
+    position   : absolute;
+    left       : 18%;
+}
+
+.register-box {
+    position   : absolute;
+    left       : 18%;
+
+}
+
+.header-logo {
+    float     : right;
+    margin-top: -45px;
+}
+
+.header-name {
+    margin-top: 50px;
+    font-size : 25px;
+    color     : gray;
+
+}
+
+input {
+    position        : relative;
+    margin          : 25px 0 0 0;
+    height          : 30px;
+    width           : 280px;
+    background-color: transparent;
+    border-style    : solid;
+    border-width    : 0px 0px 1px 0px;
+    border-color    : #cbd2df;
+    box-shadow      : none;
+    outline         : 0;
+}
+
+
+.input-icons {
+    float   : right;
+    position: absolute;
+    margin  : 25px 250px;
+
+}
+
+
+/* footer {
+    width         : 280px;
+    line-height   : 14px;
+    position      : relative;
+    top           : 50px;
+    margin        : 0 auto;
+    color         : #a7b3cb;
+    font-size     : 13px;
+    font-weight   : bold;
+    text-align    : center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+} */
+
+.visible {
+    /*   display: block; */
+    visibility  : visible;
+    opacity     : 1;
+    transition  : opacity .3s linear;
+}
+
+.hidden {
+    /*  display: none; */
+    visibility : hidden;
+    opacity    : 0;
+    transition : visibility 0s .3s, opacity .3s linear;
+}
+
+.error {
+    width: 95%; 
+    margin: 0px auto; 
+    border: 1px solid #a94442; 
+    color: #a94442; 
+    background: #f2dede; 
+    border-radius: 5px; 
+    text-align: left;
+  }
